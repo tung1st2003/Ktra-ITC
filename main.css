@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #CCC;
+    
+}
+.header{
+    height: 30%;
+
+    background: rgb(9,33,121);
+    background: linear-gradient(90deg, rgba(9,33,121,1) 1%, rgba(11,87,105,1) 16%, rgba(0,184,255,1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.logo{
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.header h1{
+    font-size: 22px;
+    color:#01524c;
+}
+.header nav {
+    height: 50px;
+    width: 80%;
+  
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.header nav .item{
+    height: 100%;
+    width: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100% 0% 100% 0% / 83% 30% 70% 17% ;
+    border: 3px solid #FFF;
+    color: #FFF;
+}
+.header nav .item:hover{
+    background-color: rgb(234, 241, 107);
+}
+.content {
+    width: 80%;
+    height: 70%;
+    background-color: #FFF;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative ;
+    top: -50px;
+  
+    left: 145px;
+
+  
+}
+.content img{
+    width: 100%;
+    height: 100%;
+ 
+}
+.content .Trian{
+    width: 30% ;
+    height: 30%;
+    margin: 10px;
+    background: rgb(81,11,105);
+    background: linear-gradient(90deg, rgba(81,11,105,1) 0%, rgba(109,9,121,1) 1%, rgba(236,0,255,1) 100%);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-bottom: 180px solid rgb(131,58,180);
+    border-right:70px solid transparent;
+}
+.content .Trian p{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: yellow;
+    padding: 25px 50px;
+}
+.icon{
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: absolute;
+    left: 22%;
+    bottom: 10%;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin{
+    100% {
+        transform: rotate(0deg);
+    }0%{
+        transform: rotate(360deg);
+    }
+};
+h3   {background-color: #01524c;}
